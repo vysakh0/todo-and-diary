@@ -1,0 +1,29 @@
+<h1>Listing diaries</h1>
+
+
+  <div class="container">
+<% @diaries.each do |diary| %>
+  <div class="row">
+    
+    <div class="span8">
+      <div class="link_contain">
+        
+      
+    <%= diary.description %>
+    <br/>
+    <% time = diary.created_at.to_time %>
+      <div class="options">
+        <%= link_to 'Show', diary %>
+        <%= link_to 'Edit', edit_diary_path(diary) %>
+        <%= link_to 'Destroy', diary, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+      <span class="time"><%= time.strftime("%A %B %d %Y %H:%M:%S") %></span>
+      </div>
+    </div>
+  </div>
+  
+<% end %>
+
+<br />
+
+<%= link_to 'New Diary', new_diary_path %>

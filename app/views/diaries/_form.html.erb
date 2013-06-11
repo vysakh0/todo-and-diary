@@ -1,0 +1,9 @@
+<%= simple_form_for(@diary) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :description, label: "How was your day?" %>
+  </div>
+
+    <%= f.button :submit %>
+<% end %>

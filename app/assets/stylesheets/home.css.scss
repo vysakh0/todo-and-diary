@@ -1,3 +1,22 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.link_contain{
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 10px;
+  border-top-color: #E9E9E9;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-left-color: #E9E9E9;
+  border-left-style: solid;
+  border-left-width: 2px;
+}
+.time{
+  float: right;
+}
+.options{
+  float: left;
+  padding: 20px;
+}
