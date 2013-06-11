@@ -1,0 +1,25 @@
+<h1>Listing people</h1>
+<div class="container">
+
+  <% @people.each do |person| %>
+    <div class="row">
+      <div class="span8">
+        <div class="link_contain">
+          <div class="options">
+            <%= person.name %>
+            <%= person.phone %>
+            <br />
+            <%= link_to 'Show', person %>
+            <%= link_to 'Edit', edit_person_path(person) %>
+            <%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <% end %>
+
+  <br />
+
+  <%= link_to 'New Person', new_person_path %>
+</div>

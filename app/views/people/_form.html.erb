@@ -1,0 +1,10 @@
+<%= simple_form_for(@person) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :phone %>
+  </div>
+
+    <%= f.button :submit %>
+<% end %>
