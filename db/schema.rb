@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130611175727) do
+ActiveRecord::Schema.define(:version => 20130611182227) do
+
+  create_table "chats", :force => true do |t|
+    t.integer  "person_id"
+    t.integer  "diary_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "chats", ["diary_id"], :name => "index_chats_on_diary_id"
+  add_index "chats", ["person_id"], :name => "index_chats_on_person_id"
 
   create_table "diaries", :force => true do |t|
     t.integer  "user_id"

@@ -1,9 +1,15 @@
-<%= simple_form_for(@diary) do |f| %>
+<%= simple_nested_form_for(@diary) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
     <%= f.input :description, label: "How was your day?" %>
   </div>
+  <h4>With whom did you have chat today?? </h4>
+  <%= f.simple_fields_for :chats do |c| %>
+    <%= c.association :person, collection: current_user.people %>
+<% end %>
+<p><%= f.link_to_add "Add a chat", :chats %></p>
 
-    <%= f.button :submit %>
+
+<%= f.button :submit %>
 <% end %>
