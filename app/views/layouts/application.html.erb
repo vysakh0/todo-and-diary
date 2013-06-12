@@ -3,6 +3,9 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "To do app" %></title>
+    <link rel="icon" 
+      type="image/png" 
+        href="http://www.bloopdiary.com/image/diary.gif">
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Myapp" %>">
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
