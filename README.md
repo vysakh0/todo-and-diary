@@ -69,4 +69,4 @@ If you have time, fork it, test, clean it, add stuffs to it :D
 
 
 ### License
-MIT License
+<a rel="license" href="http://creativecommons.org/licenses/by/2.5/in/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/2.5/in/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/2.5/in/deed.en_US">Creative Commons Attribution 2.5 India License</a>.
