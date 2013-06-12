@@ -69,4 +69,6 @@ If you have time, fork it, test, clean it, add stuffs to it :D
 
 
 ### License
-MIT License
+The MIT License (MIT)
+
+Copyright (c) 2013 Vysakh S
