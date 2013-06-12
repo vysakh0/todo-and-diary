@@ -11,12 +11,11 @@ At every day end, I should be able to write a diary with things I did, people I 
 - rails s
 
 ### Live App
-[Todo and diary](tandd.herokuapp.com)
+[Todo and diary](http://tandd.herokuapp.com)
 
 ### P.S
 - I should have done BDD, but I made this app in very short time using rails composer. Din think about models etc, so the logic might not be good. So, need to work on the logic when I get time. 
 
-days.rb
 ```ruby
 #!/usr/bin/env ruby
 
@@ -63,10 +62,10 @@ File.open('done_thing', 'a') do |f|
 end
 ```
 
-While I was writing the program, I hit a constraint, what if I wanted to see my diary for a specific day? How do I query it? Then I saw the need for database. I looked for ruby orms, decided to go with sqlite. But finally thought I would do it Rails as I am very comfortable but I had someother project on the otherside. I had to complete it soon, only when I am under pressure I tend to concentrate on everything else, even now when I type, my friend is asking to complete few modules. I tend to get imaginative, innovative during these times, I can't help it :D 
-So, I told I had no time, I wanted the app to be quick in no time. I decided to go with [rails composer](https://github.com/RailsApps/rails-composer). I din do any testing(I am sorry, I hate it :/)
+While I was writing the program, I hit a constraint, what if I wanted to see my diary for a specific day? How do I query the file? Then I saw the need for database. I looked for ruby orms, decided to go with sqlite. But finally thought I would do it Rails as I am very comfortable. But I had someother project on the otherside,  I had to complete it soon. Only when I am under pressure I tend to concentrate on everything else. Even now when I type, my friend is asking to complete few modules. I tend to get imaginative, innovative during these times, I can't help it :D 
+I told I had no time, so I wanted the app to be made in no time. I decided to go with [rails composer](https://github.com/RailsApps/rails-composer). I din do any testing(I am sorry, I hate it :/)
 
-* If you have time, fork it, test, clean it, add stuffs to it :D*
+If you have time, fork it, test, clean it, add stuffs to it :D
 
 
 ### License
