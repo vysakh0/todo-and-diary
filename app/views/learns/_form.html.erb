@@ -1,0 +1,16 @@
+<%= simple_nested_form_for(@learn) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :what %>
+    <%= f.input :how %>
+    <%= f.input :status %>
+  </div>
+
+  <%= f.simple_fields_for :learning_steps do |l| %>
+    <%= l.input :step %>
+    <%= l.link_to_remove 'Remve this learning step' %>
+  <% end %>
+  <p><%= f.link_to_add 'Add the steps to achieve the learning task', :learning_steps %></p>
+    <%= f.button :submit %>
+<% end %>

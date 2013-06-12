@@ -7,6 +7,7 @@
   <h4>With whom did you have chat today?? </h4>
   <%= f.simple_fields_for :chats do |c| %>
     <%= c.association :person, collection: current_user.people %>
+    <%= c.link_to_remove "Remove this chat" %>
 <% end %>
 <p><%= f.link_to_add "Add a chat", :chats %></p>
 

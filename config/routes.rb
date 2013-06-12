@@ -1,4 +1,7 @@
 Myapp::Application.routes.draw do
+  resources :learns
+
+
   resources :people
 
 

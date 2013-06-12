@@ -11,5 +11,6 @@ class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :birth_date
   has_many :diaries
   has_many :people
+  has_many :learns
   
 end

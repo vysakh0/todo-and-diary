@@ -16,6 +16,7 @@
     <li><%= link_to 'Day start:)', "#"%></li>
     <li><%= link_to 'Day End :)', new_diary_path %></li>
     <li><%= link_to 'Your People', people_path %></li>
+    <li><%= link_to 'Your Learning List', learns_path%></li>
     <% if current_user.has_role? :admin %>
       <li>
       <%= link_to 'Admin', users_path %>
